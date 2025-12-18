@@ -52,8 +52,11 @@ html,body{
   cursor:pointer;
   font-weight:600;
 }
-.btn.ghost{
-  background:none;
+  .btn.ghost.disabled{
+  opacity: 0.4;
+  cursor: not-allowed;
+  pointer-events: none;
+   background:none;
   color:var(--accent);
   border:1px solid var(--accent);
 }
@@ -136,11 +139,7 @@ html,body{
   display:inline-block;
   animation:blink 1s infinite;
 }
-  .btn.disabled{
-  opacity: 0.4;
-  cursor: not-allowed;
-  pointer-events: none;
-}
+ 
 @keyframes blink{50%{opacity:0}}
 </style>
 </head>
@@ -306,6 +305,3 @@ function typeSecret(text){
 
 </body>
 </html>
-
-
-
