@@ -136,6 +136,11 @@ html,body{
   display:inline-block;
   animation:blink 1s infinite;
 }
+  .btn.disabled{
+  opacity: 0.4;
+  cursor: not-allowed;
+  pointer-events: none;
+}
 @keyframes blink{50%{opacity:0}}
 </style>
 </head>
@@ -150,7 +155,7 @@ html,body{
     <input id="starterName" class="inputName" placeholder="Nama kamu">
     <div>
       <button class="btn" id="openBtn">Buka 🎀</button>
-      <button class="btn ghost" id="skipBtn">Lewati</button>
+    <button class="btn ghost disabled" id="skipBtn" disabled>Lewati</button>
     </div>
   </div>
 </div>
@@ -301,5 +306,6 @@ function typeSecret(text){
 
 </body>
 </html>
+
 
 
